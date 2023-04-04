@@ -38,7 +38,7 @@ P {
     width: 50%;
 }
 
-figcaption {
+.figcaption1{
     text-align: center;
     font-style: italic;
 }
@@ -63,3 +63,16 @@ nav {
     margin: auto;
     width: 25%;
 }
+table, tr, th, td{
+    border:1px solid black;
+    background-color: white;
+}
+.figcaption2{
+    text-align: center;
+}
+.figure1{
+    display: inline-block;
+    margin: auto;
+    margin-left: 0px;
+}
+/* This is CSS to alternate row colors */
