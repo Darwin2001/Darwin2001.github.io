@@ -1,10 +1,11 @@
-h1,h5{
+h1,
+h5 {
     text-align: center;
-    color:#947EB0;
+    color: #947EB0;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-h2{
+h2 {
     color: #3a86ff;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -19,35 +20,41 @@ h2{
     African Violet = #947EB0
 */
 
-body{
+body {
     background-color: #FFD4CA;
     padding-left: 2%;
     padding-right: 2%;
 }
 
-P{
+P {
     color: #274156;
     font-family: 'Merriweather', serif;
     font-size: large;
 }
-.images{
+
+.images {
     display: block;
-    margin : auto;
+    margin: auto;
     width: 50%;
 }
-figcaption{
+
+figcaption {
     text-align: center;
     font-style: italic;
 }
-h3{
-    color: #8CBA80 ;
+
+h3 {
+    color: #8CBA80;
 }
+
 .flex-parent {
     display: flex;
-} 
+}
+
 .jc-center {
     justify-content: center;
 }
-nav{
-    
+
+nav {
+    text-align: center;
 }
