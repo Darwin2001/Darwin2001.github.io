@@ -38,7 +38,7 @@ P {
     width: 50%;
 }
 
-.figcaption1{
+.figcaption1 {
     text-align: center;
     font-style: italic;
 }
@@ -58,21 +58,34 @@ h3 {
 nav {
     text-align: center;
 }
-.imagesMainPage{
+
+.imagesMainPage {
     display: block;
     margin: auto;
     width: 25%;
 }
-table, tr, th, td{
-    border:1px solid black;
-    background-color: white;
+
+table,
+th,
+td,
+tr {
+    border: 1px solid black;
 }
-.figcaption2{
+
+.figcaption2 {
     text-align: center;
 }
-.figure1{
+
+.figure1 {
     display: inline-block;
     margin: auto;
     margin-left: 0px;
 }
+
 /* This is CSS to alternate row colors */
+tr:nth-child(even) {
+    background-color: #C6E0FF;
+}
+tr:nth-child(odd) {
+    background-color: #C792DF;
+}
