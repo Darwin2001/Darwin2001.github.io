@@ -86,6 +86,37 @@ tr {
 tr:nth-child(even) {
     background-color: #C6E0FF;
 }
+
 tr:nth-child(odd) {
     background-color: #C792DF;
+}
+
+/* This is CSS for forms.html */
+.container {
+    width: 500px;
+    clear: both;
+}
+
+.container input {
+    width: 100%;
+    clear: both;
+    background-color: #f2e5d7;
+}
+
+button {
+    background-color: grey;
+    color: wheat;
+}
+
+/*My Four input element CSS lines */
+.radio {
+    font-size: 65px;
+}
+
+select {
+    width: 100%;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
 }

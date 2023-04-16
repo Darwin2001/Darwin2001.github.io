@@ -24,46 +24,61 @@
     <main>
         <h2>HTML Forms Practice</h2>
         <form>
-            <!--This is for the first name-->
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" required>
-            <br>
-            <!--This is fo the last name-->
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lanme" name="'lname" required>
-            <br>
-            <!--This is for phone number-->
-            <label for="phonenumber">Phone Number:</label>
-            <input type="text" id="phonenumber" name="phonenumber">
-            <br>
-            <!--This is for email-->
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <br>
+            <div class="container">
+                <!--This is for the first name-->
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required placeholder="John">
+                <br>
+                <!--This is fo the last name-->
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lanme" name="'lname" required placeholder="Doe">
+                <br>
+                <!--This is for phone number-->
+                <label for="phonenumber">Phone Number:</label>
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="123-456-7891">
+                <br>
+                <!--This is for email-->
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Jdoe@gmail.com">
+                <br>
+            </div>
             <!--This is animal checkbox-->
-            <label for="animal">What kind of animals do you like?:</label><br>
-            <input type="checkbox" id="animal1" name="animal1" value="dog">
-            <label for="animal1">Dog</label><br>
-            <input type="checkbox" id="animal2" name="animal2" value="cat">
-            <label for="animal2">Cat</label><br>
-            <input type="checkbox" id="animal3" name="animal3" value="fish">
-            <label for="animal3">Fish</label><br>
+            <label for="product">Which products of ours do you like?:"</label><br>
+            <input type="checkbox" id="animal1" name="product1" value="Plasma Tvs">
+            <label for="product1">Plasma Tvs</label><br>
+            <input type="checkbox" id="animal2" name="product2" value="Game Consoles">
+            <label for="product2">Game Consoles</label><br>
+            <input type="checkbox" id="animal3" name="product3" value="Personal Computers">
+            <label for="product3">Personal Computers</label><br>
             <!--This is radio buttons-->
-            <label for="color">What is your favorite color?:</label><br>
-            <input type="radio" id="blue" name="color" value="blue">
-            <label for="blue">Blue</label><br>
-            <input type="radio" id="red" name="color" value="red">
-            <label for="red">Red</label><br>
-            <input type="radio" id="green" name="color" value="green">
-            <label for="green">Green</label><br>
-            <input type="radio" id="yellow" name="color" value="yellow">
-            <label for="yellow">Yellow</label>
-            <!--Button for resetting-->
+            <label for="futureproduct">Which item would you most want to see us create next?:</label><br>
+            <input type="radio" class="radio" id="monitor" name="futureproduct" value="monitor">
+            <label for="monitor">Gaming Monitor</label><br>
+            <input type="radio" class="radio" id="controller" name="futureproduct" value="controller">
+            <label for="controller">Pro controller</label><br>
+            <input type="radio" class="radio" id="browser" name="futureproduct" value="browser">
+            <label for="browser">Web Browser</label><br>
+            <input type="radio" class="radio" id="mouse" name="futureproduct" value="mouse">
+            <label for="mouse">Gaming Mouse</label>
+            <!--Select box-->
             <br>
-            <input type="reset" value ="Reset">
-            <!--Button for submitting-->
+            <label for="games">Droswy Panda is going live with a brand new e-sports team, the drowsy pandas. Please
+                select a game you would like for our team to compete in:</label><br>
+            <select name="games" id="games">
+                <option value="N/A">Select One</option>
+                <option value="League">League of Legends</option>
+                <option value="COD">Call of Duty</option>
+                <option value="Overwatch">Overwatch</option>
+                <option value="Super Smash">Super Smash Bros.</option>
+                <option value="Valorant">Valorant</option>
+            </select>
             <br>
-            <input type="submit" value="Submit">
+            <br>
+            <!--This is for the submit and Cancel buttons-->
+            <div class="flex-parent jc-center">
+                <button type="submit" class="green margin-right">Confirm</button>
+                <button type="reset" class="magenta">Reset</button>
+            </div>
         </form>
     </main>
     <footer>
