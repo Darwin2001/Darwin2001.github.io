@@ -120,3 +120,16 @@ select {
     border-radius: 4px;
     background-color: #f1f1f1;
 }
+/*Links custom settings */
+a:visited{
+    text-decoration: none;
+    color: #315659;
+}
+a:link{
+    text-decoration: none;
+    color: #2B50AA;
+}
+a:hover{
+    color: green;
+    text-decoration: none;
+}
