@@ -1,41 +1,46 @@
 h1,
 h5 {
     text-align: center;
-    color: #9067C6;
+    color: #124210;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 h2 {
-    color: #3a86ff;
+    color: #305252;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
-
-/*
-    Color Palette to use for class 
-    Olivine = #317B22
-    A darker brighter blue = #3a86ff
-    Charcoal(Our version of black) = #274156
-    Pale Dogwood(Background color most likely) = #FFD4CA
-    African Violet = #947EB0
-*/
-
+header{
+    background-color: #9cce5a;
+    margin: -2%;
+    margin-left: -3%;
+    margin-right: -3%;
+    margin-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 body {
-    background-color: #FFD4CA;
+    background-color: #f5f6f3;
     padding-left: 2%;
     padding-right: 2%;
 }
 
 P {
-    color: #274156;
+    color: #124210;
+    margin-left: 2%;
     font-family: 'Merriweather', serif;
     font-size: large;
+}
+ul{
+    margin-left: 3%;
+    color: #124210;
 }
 
 .images {
     display: block;
     margin: auto;
     width: 50%;
+    border: 8px solid #9cce5a;;
 }
 
 .figcaption1 {
@@ -44,7 +49,7 @@ P {
 }
 
 h3 {
-    color: #317B22;
+    color: #305252;
 }
 
 .flex-parent {
@@ -123,13 +128,17 @@ select {
 /*Links custom settings */
 a:visited{
     text-decoration: none;
-    color: #315659;
+    color: #124210;
 }
 a:link{
     text-decoration: none;
-    color: #2B50AA;
+    color: #124210;
 }
 a:hover{
-    color: green;
+    color: #f5f6f3;
     text-decoration: none;
+}
+
+hr{
+    border:2px solid #9cce5a;
 }
