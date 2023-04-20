@@ -1,0 +1,51 @@
+p {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h2 {
+    font-family: "papyrus", fantasy;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.avatar{
+    background-color: blue;
+    color: red;
+}
+
+ul{
+    text-align: center;
+    background-color: aqua;
+    color: pink;
+}
+
+.center{
+    text-align: center;
+}
+.huuuge{
+    font-size: 32px;
+}
+body{
+    padding:0%;
+    padding-left: 5%;
+    padding-top: 10%;
+    border-style: solid;
+    border-radius: 30px;
+    border-left:dotted;
+    border-right: double;
+    border-top: dashed;
+    border-bottom: 5px;
+}
+
+.money{
+    font-size: large;
+    font-weight: bold;
+    color:green;
+}
+div{
+    background-color: grey;
+    height: 20%;
+    width:20%
+}
