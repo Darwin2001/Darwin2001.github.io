@@ -40,7 +40,9 @@ ul{
     display: block;
     margin: auto;
     width: 50%;
-    border: 8px solid #9cce5a;;
+    border: 8px solid #9cce5a;
+    border-radius: 3%;
+    
 }
 
 .figcaption1 {
