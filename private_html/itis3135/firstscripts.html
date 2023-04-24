@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITSC_3135||Darwin Peraza||Drowsy Panda||First Javascripts</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <script src="scripts/include.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h2>First Javascripts</h2>
+        <p>The aim of this webapages is to help Peraza Creations practice and showcase their talents at implementing
+            Javascripts into HTML to create an even more dynamic webage and transform the web experience on our page.
+            This webpages showcases just some of the following things we can do: </p>
+        <!--Displays the time and day-->
+        <h3 id="TimeArea" class="scriptstext">Time of week placeholder</h3>
+        <script>displayTime();</script>
+        <br>
+        <!--Greeting form-->
+        <form>
+            <div class="container">
+                <h3>Tell us your name:</h3>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required>
+
+                <label for="mood">What is your Mood?:</label>
+                <input type="text" id="mood" name="mood" placeholder="Sad af" required>
+            </div>
+            <br>
+            <div class="flex-parent jc-center">
+                <button type="button" onclick="displayMessage()" class="buttonCenter">Submit</button>
+                <button type="reset" onclick="clearMessage()" class="buttonCenter">Reset</button>
+            </div>
+        </form>
+        <h3>Disply Message:</h3>
+        <p id="messageArea">Fill out the Form....... Please?</p>
+        <br>
+        <form>
+            <h3>The Drowsy Panda has a Question for you:</h3>
+            <button type="button" class = "single-button" onclick="pandaSays()">What does the Drowsy Panda Say?</button>
+        </form>
+        <br>
+        <h3>Sleep Schedule</h3>
+        <p>Sleep is important to the Drowsy Panda, as you can see in my introduction page. Use the following form below to determine your sleep Schedule</p>
+        <form>
+            <select name="ageRange" id="ageRange" class="coolSelect">
+                <option value="1">Select One:</option>
+                <option value="2">Newborn(0-4 Months)</option>
+                <option value ="3">Infant(4-12 Months)</option>
+                <option value="4">Toddler(1-2 Years)</option>
+                <option value="5">Preschool(3-5 Years)</option>
+                <option value="6">School Age(6-12 Years)</option>
+                <option value="7">Teenager(13-18 Years)</option>
+                <option value ="8">Adult(18+ Years)</option>
+            </select>
+            <br>
+            <br>
+            <div class="flex-parent jc-center">
+            <button type="button" onclick="printSleepInterval()">Submit</button>
+            <button type="reset">Reset</button>
+            </div>
+        </form>
+        <br>
+        <p id="sleepSchedule">Please fill out the form above</p>
+    </main>
+    <div data-include="components/footer.html"></div>
+</body>
+
+</html>

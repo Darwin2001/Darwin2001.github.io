@@ -10,20 +10,7 @@
 </head>
 
 <body>
-    <header>
-        <!--This will include a scrollbar to further navigate the website-->
-        <h1>ITSC 3135| Darwin Peraza|Drowsy Panda</h1>
-        <nav>
-            ||<a href="https://webpages.charlotte.edu/dperaza/">Niner Webpage</a>||
-            <a href="index.html">Homepage</a>||
-            <a href="introduction.html">Introduction</a>||
-            <a href="tables.html">HTML Tables</a>||
-            <a href="forms.html">HTML Forms </a>||
-            <a href="website_evaluations.html">Website Evaluations</a>||
-            <a href="stuff/bAd W3bstie!.htm">Crappy Webpage</a>||
-        </nav>
-    </header>
-
+    <div data-include="components/header.html"></div>
     <main>
         <h2>Homepage</h2>
         <img src="images/sleepyPanda.gif" alt="Sleeping panda" class="imagesMainPage">
@@ -35,34 +22,8 @@
             Peraza Creations and goes to show how much value we can offer the industry.
         </p>
     </main>
-    <footer>
-        <hr>
-        <nav>
-            <a href="https://github.com/Darwin2001">Github Profile</a>||
-            <a href="">Github Pages</a>||
-            <a href="https://github.com/Darwin2001/Darwin2001.github.io">Github Course Page</a>||
-            <a href="https://webpages.charlotte.edu/dperaza/">Webspace</a>||
-            <a href="https://www.freecodecamp.org/DarwinIsMid">FreeCodeCamp</a>||
-            <a href="https://www.codecademy.com/profiles/DarwinIsMid">CodeAcademy</a>||
-            <a href="https://www.linkedin.com/in/darwin-peraza-055486223/">LinkedIn</a>
-        </nav>
-
-        <div class="flex-parent jc-center">
-            <!--Scripts will also be in footer file-->
-            <!--This is the html button-->
-            <a href="https://validator.w3.org/check?uri=referer" id="validtion_link_html">
-                <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
-                <script src="scripts/htmlvalidator.js"></script>
-
-            </a>
-            <!--This is CSS button-->
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validtion_link_css">
-                <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
-                <script src="scripts/cssvalidator.js"></script>
-            </a>
-        </div>
-        <h5>This page has been created by Peraza Creations</h5>
-    </footer>
+    <div data-include="components/footer.html"></div>
+    <script src = "scripts/include.js"></script>
 </body>
 
 </html>
