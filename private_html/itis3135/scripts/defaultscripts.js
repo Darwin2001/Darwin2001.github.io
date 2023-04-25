@@ -17,7 +17,7 @@ function getTime() {
     let currHour = currDate.getHours();
     let suffix = "am";
     //Checking for am or pm
-    if(currHour > 12){
+    if (currHour > 12) {
         suffix = "pm";
         currHour = currHour - 12;
     }
@@ -25,15 +25,15 @@ function getTime() {
     let currMin = currDate.getMinutes();
 
     //Formatting minutes 
-    if(currMin < 10){
-        currMin = "0" +currMin;
+    if (currMin < 10) {
+        currMin = "0" + currMin;
     }
 
     //String to be returned 
 
-    return "Today is "+cDay+ ", " + cMonth + " " + cDate + " " + cYear + ". It is currently " + currHour + ":" + currMin + suffix;
+    return "Today is " + cDay + ", " + cMonth + " " + cDate + " " + cYear + ". It is currently " + currHour + ":" + currMin + suffix;
 }
-function displayTime(){
+function displayTime() {
     //Getting the String
     let text = getTime();
 
@@ -43,26 +43,26 @@ function displayTime(){
     return;
 }
 
-function getMessageInfo(){
+function getMessageInfo() {
     //Getting the Message information
     let fname = document.getElementById("fname").value;
     let lname = document.getElementById("lname").value;
     let mood = document.getElementById("mood").value;
 
-    if(!fname){
-        fname= "wow";
+    if (!fname) {
+        fname = "wow";
     }
-    if(!lname){
+    if (!lname) {
         lname = "this one too";
     }
-    if(!mood){
+    if (!mood) {
         mood = "can't believe this";
     }
 
     return "Welcome to the Drowsy Panda " + fname + " " + lname + ". I see you've been feeling " + mood + " recently, huh?";
 }
 
-function displayMessage(){
+function displayMessage() {
     //Getting Message 
     let info = getMessageInfo();
     //Printing it out 
@@ -71,7 +71,7 @@ function displayMessage(){
     return;
 }
 
-function clearMessage(){
+function clearMessage() {
     let text = "Fill out the Form....... Please?"
 
     let area = document.getElementById("messageArea")
@@ -79,23 +79,23 @@ function clearMessage(){
     return;
 }
 
-function pandaSays(){
+function pandaSays() {
     alert("Zzzzzzzz.........");
 }
 
-function sleepInterval(){
+function sleepInterval() {
     //getting the value of selected box
     let range = document.getElementById("ageRange").value;
     let textbubble;
     //Running it through possible cases 
-    switch(+range){
+    switch (+range) {
         case 0:
             textbubble = "Come on Dog :/ , Pick a real one";
             break;
         case 1:
             textbubble = "14-17 hours";
             break;
-        case 2: 
+        case 2:
             textbubble = "12-16 hours"
             break;
         case 3:
@@ -104,13 +104,13 @@ function sleepInterval(){
         case 4:
             textbubble = "10-13 hours";
             break;
-        case 5: 
+        case 5:
             textbubble = "9-12 hours";
             break;
         case 6:
-            textbubble="8-10 hours";
+            textbubble = "8-10 hours";
             break;
-        case 7: 
+        case 7:
             textbubble = "7 or more hours";
             break;
         default:
@@ -118,10 +118,10 @@ function sleepInterval(){
             break;
 
     }
-    return "The Drowsy Panda Reccomends getting between " + textbubble + " for your age group." 
+    return "The Drowsy Panda Reccomends getting between " + textbubble + " for your age group."
 }
 
-function printSleepInterval(){
+function printSleepInterval() {
     //getting print statement 
     let text = sleepInterval();
 
@@ -131,7 +131,7 @@ function printSleepInterval(){
     return;
 }
 
-function resetInterval(){
+function resetInterval() {
     let text = "Please fill out the form above to learn about recommended sleep hours!";
 
     let area = document.getElementById("sleepSchedule");
@@ -139,42 +139,42 @@ function resetInterval(){
     return;
 }
 
-function generateQuote(){
+function generateQuote() {
     var num = generateNumBetweenInterval();
     let text;
-     switch(+num){
+    switch (+num) {
         case 0:
             text = "\"It's 8 PM somewhere\"-Some suburban mother";
             break;
-        case 1: 
+        case 1:
             text = "\"I love you like Kanye loves Kanye\"-Kanye West before he became racist";
             break;
         case 2:
             text = "\"They'll be aight\"-Daniel from the Domino's when a pizza gets messed up";
             break;
-        case 3: 
+        case 3:
             text = "\"Yabadbababdadoo Old Navy\"-Lebron James when he doesn't know the lyrics to songs, which happens A LOT."
             break;
-        default: 
+        default:
             text = "Idk what happened man - Me when coding this";
             break;
-     }
-     return text;
+    }
+    return text;
 }
 
-function generateNumBetweenInterval(){
-    
+function generateNumBetweenInterval() {
+
     return Math.floor(Math.random() * 4);
 }
 
-function popupBox(){
-    if(confirm("Are you sure you want an inpirational quote?")){
+function popupBox() {
+    if (confirm("Are you sure you want an inpirational quote?")) {
         let txt = generateQuote();
 
         let area = document.getElementById("quoteBox");
         area.innerHTML = txt;
     }
-    else{
+    else {
         let txt = "Have you chosen not be inspired? Alright then I mean i guess you don't have to be....";
         let area = document.getElementById("quoteBox");
         area.innerHTML = txt;
