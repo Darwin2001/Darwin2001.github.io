@@ -86,29 +86,39 @@ function pandaSays(){
 function sleepInterval(){
     //getting the value of selected box
     let range = document.getElementById("ageRange").value;
-    let textbubble = "null";
+    let textbubble;
     //Running it through possible cases 
-    switch(range){
-        case 1 : textbubble = "Don't select this one bro come on";
-                break;
-        case 2: textbubble = "14-17 hours";
-                break;
-        case 3: textbubble = "12-16 hours";
-                break;
-        case 4: textbubble = "11-14 hours";
-                break;
-        case 5: textbubble = "10-13 hours";
-                break;
-        case 6: textbubble = "9-12 hours";
-                break;
-        case 7: textbubble = "8-10 hours";
-                break;
-        case 8: textbubble = "7 or more hours";
-                break;
-        default: textbubble = "how?";
-                break;
-        }
-        return "The Drowsy Panda says you need " + textbubble + " of sleep everynight";
+    switch(+range){
+        case 0:
+            textbubble = "Come on Dog :/ , Pick a real one";
+            break;
+        case 1:
+            textbubble = "14-17 hours";
+            break;
+        case 2: 
+            textbubble = "12-16 hours"
+            break;
+        case 3:
+            textbubble = "11-14 hours";
+            break;
+        case 4:
+            textbubble = "10-13 hours";
+            break;
+        case 5: 
+            textbubble = "9-12 hours";
+            break;
+        case 6:
+            textbubble="8-10 hours";
+            break;
+        case 7: 
+            textbubble = "7 or more hours";
+            break;
+        default:
+            textbubble = "null";
+            break;
+
+    }
+    return "The Drowsy Panda Reccomends getting between " + textbubble + " for your age group." 
 }
 
 function printSleepInterval(){
@@ -119,4 +129,54 @@ function printSleepInterval(){
     let area = document.getElementById("sleepSchedule");
     area.innerHTML = text;
     return;
+}
+
+function resetInterval(){
+    let text = "Please fill out the form above to learn about recommended sleep hours!";
+
+    let area = document.getElementById("sleepSchedule");
+    area.innerHTML = text;
+    return;
+}
+
+function generateQuote(){
+    var num = generateNumBetweenInterval();
+    let text;
+     switch(+num){
+        case 0:
+            text = "\"It's 8 PM somewhere\"-Some suburban mother";
+            break;
+        case 1: 
+            text = "\"I love you like Kanye loves Kanye\"-Kanye West before he became racist";
+            break;
+        case 2:
+            text = "\"They'll be aight\"-Daniel from the Domino's when a pizza gets messed up";
+            break;
+        case 3: 
+            text = "\"Yabadbababdadoo Old Navy\"-Lebron James when he doesn't know the lyrics to songs, which happens A LOT."
+            break;
+        default: 
+            text = "Idk what happened man - Me when coding this";
+            break;
+     }
+     return text;
+}
+
+function generateNumBetweenInterval(){
+    
+    return Math.floor(Math.random() * 4);
+}
+
+function popupBox(){
+    if(confirm("Are you sure you want an inpirational quote?")){
+        let txt = generateQuote();
+
+        let area = document.getElementById("quoteBox");
+        area.innerHTML = txt;
+    }
+    else{
+        let txt = "Have you chosen not be inspired? Alright then I mean i guess you don't have to be....";
+        let area = document.getElementById("quoteBox");
+        area.innerHTML = txt;
+    }
 }

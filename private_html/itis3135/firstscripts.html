@@ -46,31 +46,44 @@
         <br>
         <form>
             <h3>The Drowsy Panda has a Question for you:</h3>
-            <button type="button" class = "single-button" onclick="pandaSays()">What does the Drowsy Panda Say?</button>
+            <button type="button" class="single-button" onclick="pandaSays()">What does the Drowsy Panda Say?</button>
         </form>
         <br>
         <h3>Sleep Schedule</h3>
-        <p>Sleep is important to the Drowsy Panda, as you can see in my introduction page. Use the following form below to determine your sleep Schedule</p>
+        <p>Sleep is important to the Drowsy Panda, as you can see in my introduction page. Use the following form below
+            to determine your sleep Schedule</p>
         <form>
             <select name="ageRange" id="ageRange" class="coolSelect">
-                <option value="1">Select One:</option>
-                <option value="2">Newborn(0-4 Months)</option>
-                <option value ="3">Infant(4-12 Months)</option>
-                <option value="4">Toddler(1-2 Years)</option>
-                <option value="5">Preschool(3-5 Years)</option>
-                <option value="6">School Age(6-12 Years)</option>
-                <option value="7">Teenager(13-18 Years)</option>
-                <option value ="8">Adult(18+ Years)</option>
+                <option value="0">Select One:</option>
+                <option value="1">Newborn(0-4 Months)</option>
+                <option value="2">Infant(4-12 Months)</option>
+                <option value="3">Toddler(1-2 Years)</option>
+                <option value="4">Preschool(3-5 Years)</option>
+                <option value="5">School Age(6-12 Years)</option>
+                <option value="6">Teenager(13-18 Years)</option>
+                <option value="7">Adult(18+ Years)</option>
             </select>
             <br>
             <br>
             <div class="flex-parent jc-center">
-            <button type="button" onclick="printSleepInterval()">Submit</button>
-            <button type="reset">Reset</button>
+                <button type="button" onclick="printSleepInterval()">Submit</button>
+                <button type="reset" onclick="resetInterval()">Reset</button>
             </div>
         </form>
         <br>
-        <p id="sleepSchedule">Please fill out the form above</p>
+        <p id="sleepSchedule">Please fill out the form above to learn about recommended sleep hours!</p>
+        <br>
+        <h3>The Panda seeks to inspire you</h3>
+        <p>Thank you for visiting the Drowsy Panda's introduction to Javascripts, I hope it was as interesting for you
+            as it was for me. However, before you the panda would like to impart a key piece of wisdom to you. Please
+            click the button below in order to get some conventional wisdom, hell click it more than once you might get
+            something different :)</p>
+            <form>
+                <button type="button" class="single-button" onclick="popupBox()">Please Click on Me!</button>
+            </form>
+            <br>
+            <h3>Quote of the day:</h3>
+            <p id="quoteBox">Have you chosen not be inspired? Alright then I mean i guess you don't have to be....</p>
     </main>
     <div data-include="components/footer.html"></div>
 </body>
