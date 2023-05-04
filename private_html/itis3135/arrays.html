@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8">
+
+        <script src = "scripts/include.js"></script>
+        <script src = "scripts/arrays.js"></script>
+        <link rel="stylesheet" href="styles/stylesheet.css">
+
+        <title>ITSC_3135|Darwin Peraza|Drowsy Panda|Arrays</title>
+    </head>
+
+    <body>
+        
+        <!--imported header-->
+        <div data-include = "components/header.html"></div>
+
+        <main>
+            <!--name of current page-->
+            <h2>Javascript Arrays</h2>
+            <br>
+            <form class="form-align">
+                <label for="employee_selected" class="salary-select">Please select an employee</label><br>
+                <select id = "employee_selected" class="arraySelect" required>
+                    <option value = "" disabled>Select One:</option>
+                    <option value = "Darwin Peraza">Darwin Peraza</option>
+                    <option value = "Haley Siharath" >Haley Siharath</option>
+                    <option value = "Seth LaMay" >Seth LaMay</option>
+                    <option value = "Mark Jarrett" >Mark Jarrett</option>
+                    <option value = "Ethan Johnson" >Ethan Johnson</option>
+                    <option value = "Conner Milam">Conner Milam</option>
+                    <option value = "Andrew Laughter">Andrew Laughter</option>
+                </select>   
+                <br>
+
+                <label for = "salary" class="salary-select">Enter the salary:</label><br>
+                <input type = "text" id = "salary" class="arraySelect" required>
+                
+                <table class="table-array">
+                    <tr>
+                        <td><button type = "button" onclick = "addSalary()">Add Salary</button></td>
+                        <td> <button type = "button" onclick = "displayResults()">Display Overview</button></td>
+                        <td><button type = "button" onclick = "displaySalary()">Display Salary</button></td>
+                    </tr>
+                </table>
+            </form>
+
+            <div id = "results" class="center-para"></div>
+            <div id = "results_table_header"></div>
+            <table id = "results_table" class="table-array">
+            </table>
+        </main>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/include.js"></script>
+    </body>
+</html>
