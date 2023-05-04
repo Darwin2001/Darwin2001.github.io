@@ -217,73 +217,89 @@ footer a:hover {
     height: 80px;
     background-color: white;
 }
-.container-calc{
-    max-width:360px;
+
+.container-calc {
+    max-width: 360px;
     justify-content: center;
-    text-align:center;
+    text-align: center;
     border: 2px solid black;
-    margin:auto;
+    margin: auto;
     margin-top: 40px;
 }
-#result{
+
+#result {
     height: 50px;
     line-height: 30px;
     padding: 4% 2%;
     font-size: 25px;
     text-align: right;
 }
-.btns{
-    display:grid;
-    border:1px;
+
+.btns {
+    display: grid;
+    border: 1px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.btns div{
+
+.btns div {
     border-top: 1px solid #999;
 }
-.btn{
+
+.btn {
     border: .5px solid gray;
     line-height: 100px;
     text-align: center;
     font-size: 20px;
 }
-#equal{
+
+#equal {
     background-color: lightblue;
-    color:whitesmoke;
-    font-size:30px;
+    color: whitesmoke;
+    font-size: 30px;
 }
-#clear{
+
+#clear {
     background-color: orange;
-    color:white;
+    color: white;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: lightgray;
 }
-#equal:hover{
+
+#equal:hover {
     background-color: blue;
 }
-#clear:hover{
+
+#clear:hover {
     background-color: red;
 }
-.arraySelect, select{
+
+.arraySelect,
+select {
     width: 30%;
     margin-bottom: 1%;
     border: 1px solid black;
     margin-right: auto;
     margin-left: auto;
-    text-align:center;
+    text-align: center;
 }
-.center-para{
+
+.center-para {
     text-align: center;
     color: #124210;
     margin-left: 2%;
     font-family: 'Merriweather', serif;
     font-size: large;
 }
-.salary-select{
+
+.salary-select {
     font-size: 20px;
     justify-content: center;
 }
-.table-array, th{
+
+.table-array,
+th {
     margin-left: auto;
     margin-right: auto;
     font-size: large;
@@ -291,6 +307,8 @@ footer a:hover {
     text-align: center;
     background-color: #C6E0FF;
 }
-.form-align{
+
+.form-align {
     text-align: center;
 }
+
