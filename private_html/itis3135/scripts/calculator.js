@@ -1,25 +1,27 @@
-let result = document.getElementById("result");
-let buttons = Array.from(document.getElementsByClassName("btn"));
+var display = document.getElementById('display');
 
-buttons.map((button) => {
-  button.addEventListener("click", (e) => {
-    if (
-      result.innerText === "0" &&
-      e.target.innerText != "/" &&
-      e.target.innerText != "*"
-    ) {
-      result.innerText = "";
-    }
-    if (e.target.innerText === "AC") {
-      result.innerText = "";
-    } else if (e.target.innerText === "=") {
-      try {
-        result.innerText = eval(result.innerText);
-      } catch {
-        result.innerText = "ERROR.";
-      }
-    } else {
-      result.innerText += e.target.innerText;
-    }
-  });
+var buttons = Array.from(document.getElementsByClassName('button'));
+
+buttons.map( button => {
+    button.addEventListener('click', (e) => {
+        switch(e.target.innerText){
+            case 'AC':
+                display.innerHTML = "&nbsp;";
+                break;
+            case '=':
+                try{
+                    display.innerText = eval(display.innerText);
+                } catch {
+                    display.innerText = "Error"
+                }
+                break;
+            case '←':
+                if (display.innerText){
+                   display.innerText = display.innerText.slice(0, -1);
+                }
+                break;
+            default:
+                display.innerText += e.target.innerText;
+        }
+    });
 });

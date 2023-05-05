@@ -212,10 +212,12 @@ footer a:hover {
 }
 
 .calc-display {
-    font-size: 60px;
+    justify-content: center;
+    font-size: large;
     width: 400px;
     height: 80px;
     background-color: white;
+    border: 2px solid black;
 }
 .container-calc{
     max-width:360px;
@@ -232,7 +234,7 @@ footer a:hover {
     font-size: 25px;
     text-align: right;
 }
-.btns{
+.btns{  
     display:grid;
     border:1px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -240,7 +242,7 @@ footer a:hover {
 .btns div{
     border-top: 1px solid #999;
 }
-.btn{
+.button{
     border: .5px solid gray;
     line-height: 100px;
     text-align: center;
@@ -264,6 +266,11 @@ footer a:hover {
 #clear:hover{
     background-color: red;
 }
+#display{
+    font-size: 45px;
+    justify-content: center;
+}
+/* Array Stylesheet */
 .arraySelect, select{
     width: 30%;
     margin-bottom: 1%;
