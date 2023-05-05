@@ -15,17 +15,70 @@
     <main>
         <h2>Image Slideshows</h2>
 
-        <div class="w3-content w3-display-container">
-            <img class="mySlides" src="images/babypanda.jpg" style="width:100%">
-            <img class="mySlides" src="images/gear5.jpg" style="width:100%">
-            <img class="mySlides" src="images/saulGoodman.jpg" style="width:100%">
-            <img class="mySlides" src="images/redPanda.jpg" style="width:100%">
-            <img class="mySlides" src="images/sleepingPanda.jpg" style="width:100%">
-            <img class="mySlides" src="images/pictureWithGf.jpg" style="width:100%">
+        <div class="container">
 
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">----D</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">-----D;</button>
-        </div>
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+                <img src="images/pictureWithGf.jpg" alt = "Picture with girlfriend">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+                <img src="images/redPanda.jpg" alt = "That's not a panda">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+                <img src="images/sleepingPanda.jpg" alt = "POV: It's 8:05am and I have an 8am class">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+                <img src="images/babypanda.jpg" alt = "POV: I woke up late to my 8am class ">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+                <img src="images/saulGoodman.jpg" alt = "The constitution says you have rights">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+                <img src="images/gear5.jpg" alt = "Joyboy">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo" src="images/pictureWithGf.jpg" onclick="currentSlide(1)" alt="Picture with Girlfriend">
+              </div>
+              <div class="column">
+                <img class="demo" src="images/redPanda.jpg" onclick="currentSlide(2)" alt="That's not a panda!">
+              </div>
+              <div class="column">
+                <img class="demo" src="images/sleepingPanda.jpg" onclick="currentSlide(3)" alt="POV: It's 8:05pm and I have an 8am class">
+              </div>
+              <div class="column">
+                <img class="demo" src="images/babypanda.jpg" onclick="currentSlide(4)" alt="POV: I woke up late to my 8am class">
+              </div>
+              <div class="column">
+                <img class="demo" src="images/saulGoodman.jpg" onclick="currentSlide(5)" alt="The constitution says you have rights">
+              </div>
+              <div class="column">
+                <img class="demo" src="images/gear5.jpg" onclick="currentSlide(6)" alt="Joyboy">
+              </div>
+            </div>
+          </div>
 
     </main>
     <div data-include="components/footer.html"></div>
