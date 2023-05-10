@@ -415,3 +415,10 @@ th {
   p a:hover{
     color:#124210;
   }
+
+  .client-table{
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
