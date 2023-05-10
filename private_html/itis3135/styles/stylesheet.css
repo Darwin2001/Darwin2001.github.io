@@ -236,16 +236,18 @@ footer a:hover {
     font-size: 25px;
     text-align: right;
 }
-.btns{  
-    display:grid;
-    border:1px;
+
+.btns {
+    display: grid;
+    border: 1px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .btns div {
     border-top: 1px solid #999;
 }
-.button{
+
+.button {
     border: .5px solid gray;
     line-height: 100px;
     text-align: center;
@@ -274,12 +276,15 @@ footer a:hover {
 #clear:hover {
     background-color: red;
 }
-#display{
+
+#display {
     font-size: 45px;
     justify-content: center;
 }
+
 /* Array Stylesheet */
-.arraySelect, select{
+.arraySelect,
+select {
     width: 30%;
     margin-bottom: 1%;
     border: 1px solid black;
@@ -314,24 +319,25 @@ th {
 .form-align {
     text-align: center;
 }
+
 /*Slideshow CSS */
 .container {
     position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
+}
+
+/* Hide the images by default */
+.mySlides {
     display: none;
-  }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
     cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -344,81 +350,106 @@ th {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  .prev{
+}
+
+.prev {
     left: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  /* Container for image text */
-  .caption-container {
+}
+
+/* Container for image text */
+.caption-container {
     text-align: center;
     background-color: #CCFCCB;
     padding: 2px 16px;
     color: Black;
-  }
-  
-  .row:after {
+}
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  .column {
+}
+
+.column {
     float: left;
     width: 16.66%;
-  }
-  .demo {
+}
+
+.demo {
     opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
+}
+
+.active,
+.demo:hover {
     opacity: 1;
-  }
-  
-  .accordion {
+}
+
+.accordion {
     background-color: black;
-  }
-  
-  .mySlides img
-  {
+}
+
+.mySlides img {
     height: 400px;
     width: 100%;
-  }
-  
-  .demo 
-  {
-    width: 100%;
-    height:50px;
-  }
-  p a:hover{
-    color:#124210;
-  }
+}
 
-  .client-table{
+.demo {
+    width: 100%;
+    height: 50px;
+}
+
+p a:hover {
+    color: #124210;
+}
+
+.client-table {
     width: 50%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  }
+}
+
+.images-project {
+    display: block;
+    margin: auto;
+    width: 25%;
+    border: 8px solid #9cce5a;
+    border-radius: 3%;
+}
+
+h4{
+    color: #305252;
+    margin-left: 15px;
+}
+
+.interior-list{
+    margin-left: 2em;
+    font-weight: 500;
+    font-size: 16px;
+    list-style-type: circle;
+}
+.exterior-list{
+    font-size: 18px;
+}
