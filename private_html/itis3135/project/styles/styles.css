@@ -1,0 +1,74 @@
+header {
+    background-color: #44CF6C;
+    text-align: center;
+    margin: -2%;
+    width: 102.45%;
+    margin-left: -2%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 25px;
+    color: #2F394D;
+}
+
+.Banner {
+    position: relative;
+    left: -3%;
+}
+
+body {
+    background-color: #FFEECF;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    left: -40%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #44CF6C;
+    font-size: large;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+.menuBtn {
+    background-color: #44CF6C;
+    color: #2F394D;
+    border: none;
+    font-size: large;
+}
+
+p {
+    font-size: 14px;
+    color: #2F394D;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
