@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco Collective|Homepage</title>
+    <title>Eco Collective|Benefits</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Wix+Madefor+Text&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="scripts/jquery.tinycarousel.min.js"></script>
+    <script src="scripts/jquery.tinycarousel.js"></script>
+    <script>$(document).ready(function () {
+            $('#slider1').tinycarousel();
+        });</script>
 </head>
 
 <body>
@@ -33,37 +39,46 @@
         </div>
     </header>
     <main>
-        <h2>Welcome to Eco Collective</h2>
-        <hr>
-        <figure>
-            <img src="images/expedition.jpg" alt="recycle drive">
-            <figcaption>A successfull expedition we held in Harrisburg PA</figcaption>
-        </figure>
-        <p>Here at Eco Collective our mission is to spread the good word about recycling and all of its benefits,
-            hopefully by the end of your visit with us we can convice
-            you to take an active role in helping out our environment and aiding the good movement to help heal the
-            planet both for the Earth and for ourselves.
-        </p>
-        <h3>About Us</h3>
-        <p>Eco Collective was started as an initiative into expanding the presence of common recycling and educate
-            people on the nessecary act of recycling as well as how a customer could participate even at the lowest
-            level.
-            This initiative was created to enhance the rate of conscious recycling across the globe and to bring
-            awarness of how people
-            can make change even at the most minute level.
-        </p>
+        <h2>Benefits of recycling</h2>
+        <br>
+
+        <div id="slider1">
+            <a class="buttons prev" href="#">&#60;</a>
+            <div class="viewport">
+                <ul class="overview">
+                    <li><img src="images/venice.jpg" class="plain-img" alt="venice after lockdown"></li>
+                    <li><img src="images/beijingafter.jpg" class="plain-img" alt="beijing after losing smog"></li>
+                    <li><img src="images/cityclean.jpg" class="plain-img" alt="clean city"></li>
+                </ul>
+            </div>
+            <a class="buttons next" href="#">&#62;</a>
+        </div>
+
+        <br>
+        <p>Recycling has plenty of benefits associated with it that far out weigh the any trouble experienced along the
+            way.
+            Environmentally the benefits are clear, a cleaner nature and restoration of ecosystems leads to a healtheir
+            earth and in turn a healther us. However, recycling does have some unforseen benefits. Recycling also has
+            some
+            economic benefits it saves energy spent and increases economic security by creating domestic material
+            sources.
+            It can also help create jobs in your country.</p>
+        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </main>
     <footer>
         <hr>
-        <a href="../index.html"> <h5>Designed by Peraza Creations</h5></a>
-            <br>
+        <a href="webpages.uncc.edu/dperaza">
+            <h5>Designed by Peraza Creations</h5>
+        </a>
+        <br>
         <div class="flex-parent jc-center">
             <!--Scripts will also be in footer file-->
             <!--This is the html button-->
             <a href="https://validator.w3.org/check?uri=referer" id="validtion_link_html">
-                <img src="images/htmlbutton.png" width="88" height="31" alt="Validate webpage HTML." class="valid-button">
+                <img src="images/htmlbutton.png" width="88" height="31" alt="Validate webpage HTML."
+                    class="valid-button">
                 <script src="scripts/htmlvalidator.js"></script>
-    
+
             </a>
             <!--This is CSS button-->
             <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validtion_link_css">

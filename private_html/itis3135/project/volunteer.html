@@ -5,14 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco Collective|Homepage</title>
+    <title>Eco Collective|Benefits</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Wix+Madefor+Text&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 </head>
 
 <body>
@@ -33,37 +42,45 @@
         </div>
     </header>
     <main>
-        <h2>Welcome to Eco Collective</h2>
-        <hr>
-        <figure>
-            <img src="images/expedition.jpg" alt="recycle drive">
-            <figcaption>A successfull expedition we held in Harrisburg PA</figcaption>
-        </figure>
-        <p>Here at Eco Collective our mission is to spread the good word about recycling and all of its benefits,
-            hopefully by the end of your visit with us we can convice
-            you to take an active role in helping out our environment and aiding the good movement to help heal the
-            planet both for the Earth and for ourselves.
-        </p>
-        <h3>About Us</h3>
-        <p>Eco Collective was started as an initiative into expanding the presence of common recycling and educate
-            people on the nessecary act of recycling as well as how a customer could participate even at the lowest
-            level.
-            This initiative was created to enhance the rate of conscious recycling across the globe and to bring
-            awarness of how people
-            can make change even at the most minute level.
-        </p>
+        <h2>Volunteer Form</h2>
+        <p>This form is for you to reach out to us over here at Eco Collective and see if we can aid you in
+            volunteering, we could always use more hands. Please fill the form out below.</p>
+
+        <div class="form-content">
+            <form>
+                <label for="name">Name:</label>
+                <br>
+                <input id="name" type="text" required>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input id="email" type="email" required>
+                <br>
+                <label for="reason">What interested you in volunteering?</label>
+                <br>
+                <textarea cols="24" rows="4" placeholder="For fun" id="reason"></textarea>
+                <br>
+                <label for="datepicker">What day interested you?</label>
+                <br>
+                <input type="text" id="datepicker" required>
+                <br>
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
     </main>
     <footer>
         <hr>
-        <a href="../index.html"> <h5>Designed by Peraza Creations</h5></a>
-            <br>
+        <a href="webpages.uncc.edu/dperaza"> <h5>Designed by Peraza Creations</h5></a>
+        <br>
         <div class="flex-parent jc-center">
             <!--Scripts will also be in footer file-->
             <!--This is the html button-->
             <a href="https://validator.w3.org/check?uri=referer" id="validtion_link_html">
-                <img src="images/htmlbutton.png" width="88" height="31" alt="Validate webpage HTML." class="valid-button">
+                <img src="images/htmlbutton.png" width="88" height="31" alt="Validate webpage HTML."
+                    class="valid-button">
                 <script src="scripts/htmlvalidator.js"></script>
-    
+
             </a>
             <!--This is CSS button-->
             <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validtion_link_css">

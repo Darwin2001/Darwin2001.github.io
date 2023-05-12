@@ -25,7 +25,6 @@ h1 {
 
 body {
     background-color: #FFEECF;
-    padding:auto;
 }
 
 .dropdown {
@@ -72,30 +71,51 @@ p {
     color: #2F394D;
     font-family: 'Oswald', sans-serif;
     font-family: 'Wix Madefor Text', sans-serif;
-    padding-left:2%;
-    padding-right:2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
-h2{
+
+h4 {
+    color: #2F394D;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+    text-align: center;
+    font-size: large;
+}
+
+h5 {
+    color: #2F394D;
     font-family: 'Oswald', sans-serif;
     font-family: 'Wix Madefor Text', sans-serif;
     text-align: center;
 }
-h3{
+
+h2 {
     font-family: 'Oswald', sans-serif;
     font-family: 'Wix Madefor Text', sans-serif;
-    padding-left: 1%;;
+    text-align: center;
 }
-figcaption{
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+    padding-left: 1%;
+    ;
+}
+
+figcaption {
     font-style: italic;
     text-align: center;
 }
-img{
-    width:600px;
+
+img {
+    width: 600px;
     height: 400px;
     margin: auto;
     display: block;
     border: 3px solid #44CF6C;
 }
+
 .container {
     position: relative;
     text-align: center;
@@ -181,10 +201,145 @@ img{
 .demo {
     opacity: 0.6;
     height: 40px;
-    width:60px;
+    width: 60px;
     text-align: center;
     justify-content: center;
 }
-.row{
+
+.row {
     margin-left: 25%;
+}
+
+table {
+    text-align: center;
+    border: solid 2px black;
+    margin: auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+tr,
+th,
+td {
+    border: solid 2px black;
+    padding: 0;
+    margin: 0;
+    color: #2F394D;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+    background-color: white;
+}
+
+.table-img {
+    width: 220px;
+    height: 180px;
+    border: none;
+}
+
+.btn-container {
+    width: 100%;
+    text-align: center;
+}
+
+.recyclebttn {
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+}
+
+.img-recycle {
+    width: 400px;
+    height: 400px;
+}
+/* Tiny Carousel */
+#slider1 {
+    height: 1%;
+    margin: 30px 0 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px 10px;
+}
+
+#slider1 .viewport {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width:50%;
+}
+
+#slider1 .buttons {
+    background: #C01313;
+    border-radius: 35px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#slider1 .next {
+    right: 0;
+    left: auto;
+    top: 50%;
+}
+
+#slider1 .buttons:hover {
+    color: #C01313;
+    background: #fff;
+}
+
+#slider1 .disable {
+    visibility: hidden;
+}
+
+#slider1 .overview {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    left: 0;
+    top: 0;
+}
+
+#slider1 .overview li {
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 1px;
+    height: 121px;
+    border: 1px solid #dcdcdc;
+    width: 236px;
+ }
+ .plain-img{
+    border: none;
+ }
+ .flex-parent {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+.valid-button{
+    height: 37.5px;
+    width:75px;
+    border: none;
+}
+.form-content{
+    margin: auto;
+    text-align: center;
+    border: 2px dashed #2F394D;
+    width: 50%;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+
 }
